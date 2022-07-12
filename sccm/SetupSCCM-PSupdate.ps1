@@ -24,3 +24,5 @@ New-NetIPAddress -IPAddress "192.168.1.1" -InterfaceAlias "Clients" -DefaultGate
 Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1"
 
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
+
+shutdown /r
