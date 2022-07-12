@@ -1,4 +1,4 @@
-#Use this is NIC's we're not set up right.
+#Use this if NIC's we're not set up right.
 
 New-NetLbfoTeam -Name "Internet" -TeamMembers "Ethernet" -TeamingMode Static
 New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode Static
