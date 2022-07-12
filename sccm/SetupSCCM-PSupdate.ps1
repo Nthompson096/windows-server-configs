@@ -1,8 +1,6 @@
 #SetupSCCM script (include windows update module)
 #
 #
-#
-#Compiled by seperate scripts
 #Install script for PSwindowsUpdate; requires internet.
 #Use this if you want to install update via powershell; or just use sconfig for updates if it failed.
 #Feel free to edit the IP addresses, hostnames, monitor width and height, nic teams.
