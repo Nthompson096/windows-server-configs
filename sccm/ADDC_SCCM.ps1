@@ -1,3 +1,5 @@
+#use this script after you have used SetupSCCM-PSupdate.ps1 or SetupSCCM.ps1
+
 Install-WindowsFeature -config .\ADDC-DHCP-DNS.XML
 
 Get-Module servermanager
