@@ -4,7 +4,8 @@
 #
 #Compiled by seperate scripts
 #Install script for PSwindowsUpdate; requires internet.
-#Use this if you want to install update via powershell; or just use sconfig.
+#Use this if you want to install update via powershell; or just use sconfig for updates if it failed.
+#Feel free to edit the IP addresses, hostnames and teams.
 
 Install-Module -Name PSWindowsUpdate -Force
 
