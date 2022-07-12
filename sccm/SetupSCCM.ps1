@@ -2,7 +2,7 @@
 #
 #
 #
-#Compiled by seperate scripts, this has no PSwindows update so use sconfig. Feel free to edit the IP addresses, hostnames and teams.
+#this has no PSwindows update so use sconfig. Feel free to edit the IP addresses, hostnames and teams.
 
 Set-DisplayResolution -Width 1920 -Height 1080 -Force
 
