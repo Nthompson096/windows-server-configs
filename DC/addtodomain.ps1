@@ -4,8 +4,8 @@
 
 Import-Module ADDSDeployment
 Install-ADDSDomainController `
--NoGlobalCatalog:$false `
--CreateDnsDelegation:$false `
+#-NoGlobalCatalog:$true `
+#-CreateDnsDelegation:$true `
 -Credential (Get-Credential) `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
