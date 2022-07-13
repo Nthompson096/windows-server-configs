@@ -1,4 +1,4 @@
-#use this script after you have used SetupSCCM-PSupdate.ps1 or SetupSCCM.ps1
+#use this script after you have used SetupSCCM.ps1 in order to set the new computer name.
 
 Get-Module servermanager
 
