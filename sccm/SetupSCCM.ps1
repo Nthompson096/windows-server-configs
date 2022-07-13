@@ -29,16 +29,16 @@ Import-Module PSWindowsUpdate
 #Renames the computer; will ask for a password.
 # Rename-Computer -NewName SCCM -LocalCredential Administrator -PassThru
 #
-<#
-	Windows ADK
-#>
+#
+#	Windows ADK
+#
 <#
 $source1 = 'https://download.microsoft.com/download/8/6/c/86c218f3-4349-4aa5-beba-d05e48bbc286/adk/adksetup.exe'
 $destination1 = './adk.exe'
 Invoke-WebRequest -Uri $source1 -OutFile $destination1
 #>
 #
-#Windows ADK-PE
+#	Windows ADK-PE
 #
 #
 <#
@@ -47,9 +47,9 @@ $destination2 = './adkwinpesetup.exe'
 Invoke-WebRequest -Uri $source2 -OutFile $destination2
 #>
 #
-<#
- This is for config manager
-#>
+#
+# This is for config manager
+#
 #
 <#
 $source3 = 'https://download.microsoft.com/download/f/5/5/f55e3b9c-781d-493b-932b-16aa1b2f6371/MEM_Configmgr_2203.exe?culture=en-us&country=US'
@@ -96,3 +96,5 @@ Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #This will reboot the computer with updates, as long as you have pswindowsupdate installed.
 #
 # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
+#
+#When the system reboots; be sure to run ADDC_SCCM.ps1 in powershell as admin.
