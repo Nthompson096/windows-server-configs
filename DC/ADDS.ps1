@@ -1,1 +1,0 @@
-Install-WindowsFeature -config .\AD.xml
