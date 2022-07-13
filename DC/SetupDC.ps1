@@ -1,7 +1,6 @@
 #SetupSCCM script (Uncomment "<#,#>" for the stuff you'd want)
 #
 #
-# Requires internet to download mem-config mananger and SQL server.
 #
 # Windows PS-Update module; requires internet to install.
 <#
