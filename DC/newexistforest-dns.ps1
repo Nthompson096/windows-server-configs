@@ -1,11 +1,11 @@
 #
-# Windows PowerShell script for AD DS Deployment
+# Windows PowerShell script for AD DS Deployment, uncomment CreateDNSDelegation if you'd wish to create one.
 #
 
 Import-Module ADDSDeployment
 Install-ADDSDomain `
 -NoGlobalCatalog:$false `
--CreateDnsDelegation:$true `
+#-CreateDnsDelegation:$true `
 -Credential (Get-Credential) `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
