@@ -1,4 +1,4 @@
-#SetupSCCM script (Uncomment "<#,#>" for the stuff you'd want)
+#DCsetup script (Uncomment "<#,#>" for the stuff you'd want)
 #
 #
 #
