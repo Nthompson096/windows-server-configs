@@ -7,8 +7,9 @@ Install-ADDSForest `
 # -CreateDnsDelegation:$false `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
--DomainName "TEST.edu" `
--DomainNetbiosName "TEST" `
+# Feel free to add a domain and domain bios name.
+# -DomainName " " `
+# -DomainNetbiosName " " `
 -ForestMode "WinThreshold" `
 # -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
