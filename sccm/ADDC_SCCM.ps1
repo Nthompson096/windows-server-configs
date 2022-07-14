@@ -26,8 +26,6 @@ Install-WindowsFeature NET-HTTP-Activation
 
 Install-WindowsFeature NET-Non-HTTP-Activ
 #
-# Add the computer to the domain of your choice in this script
-# add-Computer -DomainName Domain01 -Restart
 #
 # Windows PowerShell script for AD DS Deployment, Stand-alone DC.
 #
