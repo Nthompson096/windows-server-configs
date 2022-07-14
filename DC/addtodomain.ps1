@@ -9,11 +9,11 @@ Install-ADDSDomainController `
 -Credential (Get-Credential) `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
--DomainName "TEST.edu" `
-#-InstallDns:$true `
+# -DomainName " " `
+# -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
--NoRebootOnCompletion:$false `
--ReplicationSourceDC "DC.TEST.edu" `
+# -NoRebootOnCompletion:$false `
+# -ReplicationSourceDC " " `
 -SiteName "Default-First-Site-Name" `
 -SysvolPath "C:\Windows\SYSVOL" `
 -Force:$true
