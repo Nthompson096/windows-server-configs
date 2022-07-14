@@ -10,7 +10,7 @@ Install-ADDSDomain `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
 -DomainType "ChildDomain" `
--InstallDns:$true `
+#-InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
 -NewDomainName "new" `
 -NewDomainNetbiosName "NEW" `
