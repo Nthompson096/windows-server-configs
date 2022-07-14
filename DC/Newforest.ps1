@@ -4,7 +4,7 @@
 
 Import-Module ADDSDeployment
 Install-ADDSForest `
--CreateDnsDelegation:$false `
+#-CreateDnsDelegation:$false `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
 -DomainName "TEST.edu" `
@@ -12,7 +12,7 @@ Install-ADDSForest `
 -ForestMode "WinThreshold" `
 -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
--NoRebootOnCompletion:$false `
+#-NoRebootOnCompletion:$false `
 -SysvolPath "C:\Windows\SYSVOL" `
 -Force:$true
 
