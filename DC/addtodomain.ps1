@@ -9,6 +9,7 @@ Install-ADDSDomainController `
 -Credential (Get-Credential) `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
+# Feel free to add a domain and domain bios name.
 # -DomainName " " `
 # -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
