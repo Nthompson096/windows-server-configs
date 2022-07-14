@@ -1,5 +1,5 @@
 #
-# Windows PowerShell script for AD DS Deployment
+# Windows PowerShell script for AD DS Deployment, uncomment some lines if you feel necessary
 #
 
 Import-Module ADDSDeployment
