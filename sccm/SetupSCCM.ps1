@@ -80,21 +80,26 @@ $source4 = 'https://download.microsoft.com/download/A/C/6/AC6F2802-4CC4-40B2-B33
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 #
-#Sets teams inside the server.
-# New-NetLbfoTeam -Name "Internet" -TeamMembers "Ethernet" -TeamingMode Static
-#
-# New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode Static
-#
+# Sets teams inside the server.
+<# 
+New-NetLbfoTeam -Name "Internet" -TeamMembers "Ethernet" -TeamingMode Static
+New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode Static
+#>
 #Sets a satic IP address and DNS address as loopback
-# New-NetIPAddress -IPAddress "192.168.1.1" -InterfaceAlias "Clients" -DefaultGateway "192.168.1.1" -PrefixLength 24
-#
-# Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1"
-#
+<# 
+New-NetIPAddress -IPAddress "192.168.1.1" -InterfaceAlias "Clients" -DefaultGateway "192.168.1.1" -PrefixLength 24
+Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1"
+#>
 # Will reboot the computer with no update.
 # shutdown /r
 #
-#This will reboot the computer with updates, as long as you have pswindowsupdate installed.
+# This will reboot the computer with updates, as long as you have pswindowsupdate installed.
 #
 # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 #
-#When the system reboots; be sure to run ADDC_SCCM.ps1 in powershell as admin.
+# be sure to run ADDC_SCCM.ps1 in powershell, or run this
+<# 
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
+# Add the computer to the domain of your choice in this script
+add-Computer -DomainName Domain01 -Restart
+#>
