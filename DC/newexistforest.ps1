@@ -15,7 +15,7 @@ Install-ADDSDomain `
 -NewDomainName "new" `
 -NewDomainNetbiosName "NEW" `
 -ParentDomainName "test" `
--NoRebootOnCompletion:$false `
+# -NoRebootOnCompletion:$false `
 -SiteName "Default-First-Site-Name" `
 -SysvolPath "C:\Windows\SYSVOL" `
 -Force:$true
