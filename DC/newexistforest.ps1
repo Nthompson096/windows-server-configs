@@ -12,9 +12,9 @@ Install-ADDSDomain `
 -DomainType "ChildDomain" `
 #-InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
--NewDomainName "new" `
--NewDomainNetbiosName "NEW" `
--ParentDomainName "test" `
+# -NewDomainName " " `
+#-NewDomainNetbiosName " " `
+# -ParentDomainName " " `
 # -NoRebootOnCompletion:$false `
 -SiteName "Default-First-Site-Name" `
 -SysvolPath "C:\Windows\SYSVOL" `
