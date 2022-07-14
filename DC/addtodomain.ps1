@@ -10,7 +10,7 @@ Install-ADDSDomainController `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainName "TEST.edu" `
--InstallDns:$true `
+#-InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
 -NoRebootOnCompletion:$false `
 -ReplicationSourceDC "DC.TEST.edu" `
