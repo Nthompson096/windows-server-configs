@@ -5,8 +5,6 @@ Get-Module servermanager
 # Use only if you want a stand-alone DC-DHCP-SCCM server
 # Install-WindowsFeature -config .\ADDC-DHCP-DNS.XML
 #
-# Add the computer to the domain of your choice in this script
-# add-Computer -DomainName Domain01 -Restart
 #
 Install-WindowsFeature Web-Windows-Auth
 
@@ -27,7 +25,9 @@ Install-WindowsFeature Web-Asp-Net45
 Install-WindowsFeature NET-HTTP-Activation
 
 Install-WindowsFeature NET-Non-HTTP-Activ
-
+#
+# Add the computer to the domain of your choice in this script
+# add-Computer -DomainName Domain01 -Restart
 #
 # Windows PowerShell script for AD DS Deployment, Stand-alone DC.
 #
