@@ -12,8 +12,9 @@ Install-ADDSDomain `
 -DomainType "ChildDomain" `
 #-InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
+# Feel free to add a domain, domain bios name and a parent domain
 # -NewDomainName " " `
-#-NewDomainNetbiosName " " `
+# -NewDomainNetbiosName " " `
 # -ParentDomainName " " `
 # -NoRebootOnCompletion:$false `
 -SiteName "Default-First-Site-Name" `
