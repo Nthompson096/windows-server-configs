@@ -11,7 +11,9 @@ Import-Module PSWindowsUpdate
 #
 # Set-DisplayResolution -Width 1920 -Height 1080 -Force
 #
-<# Common display resolutions, pick your flavor and place them inside 'set-DisplayResolution', do not un-comment this block.
+<# 
+Common display resolutions, pick your flavor and place them inside 'set-DisplayResolution', do not un-comment this block.
+Useful if you are just running windows server in VNC instead of spice; or didn't have spice installed prior to oobe.
 640360
 800x600
 1536x864
