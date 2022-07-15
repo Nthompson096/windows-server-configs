@@ -32,7 +32,7 @@ Install-WindowsFeature NET-Non-HTTP-Activ
 <# 
 Import-Module ADDSDeployment
 Install-ADDSForest `
-# createDnsDelegation:$false `
+# -createDnsDelegation:$false `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
 -DomainName "sccm.edu" `
