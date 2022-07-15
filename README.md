@@ -2,7 +2,7 @@
 
 ## Windows DC DHCP, DNS, DHCP-DNS
 
-To install these features change into directory after cloning this repo and run the appropriate script, for example if i wanted to run a dhcp router inside my DC server i would change into the networking directory and run `.\networking.ps1`; just be sure to uncomment the 	`#Install-WindowsFeature -config .\DHCP.xml` command. to install a DC server with the powershell command enter into the DC directory and enter `.\Newforest.ps1`; you should be able to run this script after editing it inside notepad. Be sure to edit in anything you'd want in any of these scripts in the folders inside this repo.
+To install these features change into directory after cloning this repo and run the appropriate script, for example if i wanted to run a dhcp router inside my DC server i would change into the networking directory and run `.\networking.ps1`; just be sure to uncomment the 	`#Install-WindowsFeature -config .\DHCP.xml` command. to install a DC server with the powershell command enter into the DC directory and enter `.\Newforest.ps1`; you should be able to run this script after editing it inside notepad. Be sure to edit in anything you'd want in any of these scripts in the folders inside this repo. *Also contains info on what you want to do inside these scripts*
 
 ## Windows SCCM
 
