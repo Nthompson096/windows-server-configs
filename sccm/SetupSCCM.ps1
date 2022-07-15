@@ -51,7 +51,7 @@ Invoke-WebRequest -Uri $source2 -OutFile $destination2
 #
 #
 # This is for config manager, this will be a 1.2 GB download.
-#
+# Would advise you to install filezilla and sysprep with oobe, along with other drivers you'd need.
 #
 <#
 $source3 = 'https://download.microsoft.com/download/f/5/5/f55e3b9c-781d-493b-932b-16aa1b2f6371/MEM_Configmgr_2203.exe?culture=en-us&country=US'
