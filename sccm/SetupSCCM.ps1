@@ -32,7 +32,7 @@ Useful if you are just running windows server in VNC instead of spice; or didn't
 # Rename-Computer -NewName SCCM -LocalCredential Administrator -PassThru
 #
 #
-#	Windows ADK
+#	Windows ADK, what you could do is download the EXE's on the host machine and install filezilla on the guest and sysprep it with oobe.
 #
 <#
 $source1 = 'https://download.microsoft.com/download/8/6/c/86c218f3-4349-4aa5-beba-d05e48bbc286/adk/adksetup.exe'
