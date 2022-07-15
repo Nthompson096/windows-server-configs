@@ -50,7 +50,7 @@ Invoke-WebRequest -Uri $source2 -OutFile $destination2
 #>
 #
 #
-# This is for config manager
+# This is for config manager, this will be a 1.2 GB download.
 #
 #
 <#
