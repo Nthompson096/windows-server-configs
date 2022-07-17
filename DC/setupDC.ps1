@@ -1,4 +1,4 @@
-#SetupSCCM script (Uncomment "<#,#>" for the stuff you'd want)
+# SetupSCCM script (Uncomment "<#,#>" for the stuff you'd want)
 #
 #
 #
@@ -27,23 +27,30 @@ Useful if you are just running windows server in VNC instead of spice; or didn't
 1680x1050
 1920x1080
 #>
-#Renames the computer; will ask for a password.
+# Renames the computer; will ask for a password.
 # Rename-Computer -NewName DC -LocalCredential Administrator -PassThru
 #
-#Sets teams inside the server.
-# New-NetLbfoTeam -Name "Internet" -TeamMembers "Ethernet" -TeamingMode Static
-#
-# New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode Static
-#
-#Sets a satic IP address and DNS address as loopback, can be used on regular ethernet nics
-# New-NetIPAddress -IPAddress "192.168.1.1" -InterfaceAlias "Clients" -DefaultGateway "192.168.1.1" -PrefixLength 24
-#
-# Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1"
-#
+# Sets teams inside the server.
+<#
+New-NetLbfoTeam -Name "Internet" -TeamMembers "Ethernet" -TeamingMode Static
+
+New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode Static
+#>
+# Sets a satic IP address and DNS address as loopback, can be used on regular ethernet nics
+<#
+New-NetIPAddress -IPAddress "192.168.1.1" -InterfaceAlias "Clients" -DefaultGateway "192.168.1.1" -PrefixLength 24
+
+Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1"
+#>
 # Will reboot the computer with no update.
 # shutdown /r
 #
-#This will reboot the computer with updates, as long as you have pswindowsupdate installed.
+# This will reboot the computer with updates, as long as you have pswindowsupdate installed.
 #
 # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 #
+<# 
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
+# Add the computer to the domain of your choice in this script
+add-Computer -DomainName Domain01 -Restart
+#>
