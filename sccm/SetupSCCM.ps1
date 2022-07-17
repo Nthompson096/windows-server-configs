@@ -61,6 +61,10 @@ Invoke-WebRequest -Uri $source3 -OutFile $destination3
 #
 # Uncomment one SQL Server download
 #
+# SQL Server MGM Studio
+#
+#https://download.microsoft.com/download/8/a/8/8a8073d2-2e00-472b-9a18-88361d105915/SSMS-Setup-ENU.exe
+#
 # SQL Server 2019
 <# 
 $source4 = 'https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37b0/SQL2019-SSEI-Eval.exe'
