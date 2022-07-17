@@ -114,7 +114,7 @@ Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1
 #
 # be sure to run ADDC_SCCM.ps1 in powershell, or run this
 <# 
-Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
+# Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
 # Add the computer to the domain of your choice in this script
 add-Computer -DomainName Domain01 -Restart
 #>
