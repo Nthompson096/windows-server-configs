@@ -91,7 +91,7 @@ Invoke-WebRequest -Uri $source4 -OutFile $destination4
 # SQL Server 2016
 <#
 $source4 = 'https://download.microsoft.com/download/A/C/6/AC6F2802-4CC4-40B2-B333-395A4291EF29/SQLServer2016-SSEI-Eval.exe?culture=en-us&country=us'
-#$destination4 = './SQLServer2016-SSEI-Eval.exe'
+$destination4 = './SQLServer2016-SSEI-Eval.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 #
