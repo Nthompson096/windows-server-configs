@@ -49,8 +49,9 @@ Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "127.0.0.1
 #
 # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 #
+# Add the computer to the domain of your choice in this script
+# If you encounter an error joining a doamin, turn off the firewall or switch nics.
 <# 
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
-# Add the computer to the domain of your choice in this script
 add-Computer -DomainName Domain01 -Restart
 #>
