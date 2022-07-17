@@ -9,14 +9,13 @@
 <#
 # New Forest
 # Windows PowerShell script for AD DS Deployment, uncomment/edit some lines if you feel necessary.
-#
+# Feel free to add a domain and domain bios name.
 
 Import-Module ADDSDeployment
 Install-ADDSForest `
 # -CreateDnsDelegation:$false `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
-# Feel free to add a domain and domain bios name.
 # -DomainName " " `
 # -DomainNetbiosName " " `
 -ForestMode "WinThreshold" `
@@ -39,7 +38,6 @@ Install-ADDSDomainController `
 -Credential (Get-Credential) `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
-# Feel free to add a domain and domain bios name.
 # -DomainName " " `
 # -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
@@ -64,7 +62,6 @@ Install-ADDSDomain `
 -DomainType "ChildDomain" `
 #-InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
-# Feel free to add a domain, domain bios name and a parent domain
 # -NewDomainName " " `
 # -NewDomainNetbiosName " " `
 # -ParentDomainName " " `
