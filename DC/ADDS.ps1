@@ -33,8 +33,8 @@ Install-ADDSForest `
 
 Import-Module ADDSDeployment
 Install-ADDSDomainController `
-#-NoGlobalCatalog:$true `
-#-CreateDnsDelegation:$true `
+# -NoGlobalCatalog:$true `
+# -CreateDnsDelegation:$true `
 -Credential (Get-Credential) `
 -CriticalReplicationOnly:$false `
 -DatabasePath "C:\Windows\NTDS" `
@@ -54,13 +54,13 @@ Install-ADDSDomainController `
 
 Import-Module ADDSDeployment
 Install-ADDSDomain `
-#-NoGlobalCatalog:$false `
-#-CreateDnsDelegation:$true `
+# -NoGlobalCatalog:$false `
+# -CreateDnsDelegation:$true `
 -Credential (Get-Credential) `
 -DatabasePath "C:\Windows\NTDS" `
 -DomainMode "WinThreshold" `
 -DomainType "ChildDomain" `
-#-InstallDns:$true `
+# -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
 # -NewDomainName " " `
 # -NewDomainNetbiosName " " `
