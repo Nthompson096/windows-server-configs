@@ -14,19 +14,19 @@ Import-Module PSWindowsUpdate
 <# 
 Common display resolutions, pick your flavor and place them inside 'set-DisplayResolution', do not un-comment this block.
 Useful if you are just running windows server in VNC instead of spice; or didn't have spice installed prior to oobe.
-640360
-800x600
-1536x864
-1024x768
-1280x800
-1280x1024
-1360x768
-1366x768
-1440x900
-1536x864
-1600x900
-1680x1050
-1920x1080
+640 360
+800 600
+1536 864
+1024 768
+1280 800
+1280 1024
+1360 768
+1366 768
+1440 900
+1536 864
+1600 900
+1680 1050
+1920 1080
 #>
 #Renames the computer; will ask for a password.
 # Rename-Computer -NewName SCCM -LocalCredential Administrator -PassThru
