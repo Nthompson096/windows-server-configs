@@ -36,7 +36,7 @@ Useful if you are just running windows server in VNC instead of spice; or didn't
 #
 <#
 $source1 = 'https://download.microsoft.com/download/8/6/c/86c218f3-4349-4aa5-beba-d05e48bbc286/adk/adksetup.exe'
-$destination1 = './adk.exe'
+$destination1 = 'C:\adk.exe'
 Invoke-WebRequest -Uri $source1 -OutFile $destination1
 #>
 #
@@ -45,7 +45,7 @@ Invoke-WebRequest -Uri $source1 -OutFile $destination1
 #
 <#
 $source2 = 'https://download.microsoft.com/download/5/2/5/525dcde0-c7b8-487a-894d-0952775a78c7/adkwinpeaddons/adkwinpesetup.exe'
-$destination2 = './adkwinpesetup.exe'
+$destination2 = 'C:\adkwinpesetup.exe'
 Invoke-WebRequest -Uri $source2 -OutFile $destination2
 #>
 #
@@ -55,7 +55,7 @@ Invoke-WebRequest -Uri $source2 -OutFile $destination2
 #
 <#
 $source3 = 'https://download.microsoft.com/download/f/5/5/f55e3b9c-781d-493b-932b-16aa1b2f6371/MEM_Configmgr_2203.exe?culture=en-us&country=US'
-$destination3 = './MEM_Configmgr_2203.exe'
+$destination3 = 'C:\MEM_Configmgr_2203.exe'
 Invoke-WebRequest -Uri $source3 -OutFile $destination3
 #>
 #
@@ -64,34 +64,34 @@ Invoke-WebRequest -Uri $source3 -OutFile $destination3
 # SQL Server MGM Studio
 <#
 $source4 = 'https://download.microsoft.com/download/8/a/8/8a8073d2-2e00-472b-9a18-88361d105915/SSMS-Setup-ENU.exe'
-$destination4 = './SSMS-Setup-ENU.exe'
+$destination4 = 'C:\SSMS-Setup-ENU.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 # SQL Reporting Services
 <#
 $source4 = 'https://download.microsoft.com/download/1/a/a/1aaa9177-3578-4931-b8f3-373b24f63342/SQLServerReportingServices.exe'
-$destination4 = './SQLServerReportingServices.exe'
+$destination4 = 'C:\SQLServerReportingServices.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 # https://download.microsoft.com/download/1/a/a/1aaa9177-3578-4931-b8f3-373b24f63342/SQLServerReportingServices.exe
 #>
 # SQL Server 2019
 <# 
 $source4 = 'https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37b0/SQL2019-SSEI-Eval.exe'
-$destination4 = './SQL2019-SSEI-Eval.exe'
+$destination4 = 'C:\SQL2019-SSEI-Eval.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 # SQL Server 2017
 #
 <# 
 $source4 = 'https://download.microsoft.com/download/5/2/2/522EE642-941E-47A6-8431-57F0C2694EDF/SQLServer2017-SSEI-Eval.exe?culture=en-us&country=us'
-$destination4 = './SQLServer2017-SSEI-Eval.exe'
+$destination4 = 'C:\SQLServer2017-SSEI-Eval.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 #
 # SQL Server 2016
 <#
 $source4 = 'https://download.microsoft.com/download/A/C/6/AC6F2802-4CC4-40B2-B333-395A4291EF29/SQLServer2016-SSEI-Eval.exe?culture=en-us&country=us'
-$destination4 = './SQLServer2016-SSEI-Eval.exe'
+$destination4 = 'C:\SQLServer2016-SSEI-Eval.exe'
 Invoke-WebRequest -Uri $source4 -OutFile $destination4
 #>
 #
