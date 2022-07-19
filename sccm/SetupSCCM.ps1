@@ -114,6 +114,12 @@ New-NetLbfoTeam -Name "Clients" -TeamMembers "Ethernet 2" -TeamingMode LACP
 New-NetIPAddress -IPAddress "x.x.x.x" -InterfaceAlias "Clients" -DefaultGateway "x.x.x.x" -PrefixLength xx
 Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "x.x.x.x"
 #>
+# For AD domains joins
+<# 
+New-NetIPAddress -IPAddress "x.x.x.x" -InterfaceAlias "Clients" -DefaultGateway "x.x.x.x" -PrefixLength xx
+Set-DnsClientServerAddress -InterfaceAlias "Internet" -ServerAddresses "x.x.x.x"
+Set-DnsClientServerAddress -InterfaceAlias "Clients" -ServerAddresses "x.x.x.x"
+#>
 # Will reboot the computer with no update.
 # shutdown /r
 #
