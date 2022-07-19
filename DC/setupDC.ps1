@@ -28,7 +28,7 @@ Useful if you are just running windows server in VNC instead of spice; or didn't
 1920x1080
 #>
 # Renames the computer; will ask for a password.
-# Rename-Computer -NewName DC -LocalCredential Administrator -PassThru
+# Rename-Computer -NewName DC-Server -LocalCredential Administrator -PassThru
 #
 # Sets teams inside the server.
 <# 
