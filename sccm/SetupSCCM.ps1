@@ -29,7 +29,7 @@ Useful if you are just running windows server in VNC instead of spice; or didn't
 1920 1080
 #>
 #Renames the computer; will ask for a password.
-# Rename-Computer -NewName SCCM -LocalCredential Administrator -PassThru
+# Rename-Computer -NewName SCCM-Server -LocalCredential Administrator -PassThru
 #
 #
 #	Windows ADK, what you could do is download the EXE's on the host machine and install filezilla on the guest and sysprep it with oobe.
