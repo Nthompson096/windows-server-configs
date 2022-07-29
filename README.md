@@ -11,6 +11,12 @@ with powershell; edit this script to whichever you'd like, if you want to downlo
 *Note: Most of the exe's should be stored in the C:\ drive.*
 If you're getting errors on this list not being completed; add in more ram, I started out with at least 16 GB (VM) for the SCCM server but you could try 8 GB; typical workstations (host) could be 64GB in ram for GNS3 (or higher if you're fancy)
 
+To install the client on a computer; go to the share you installed SCCM into; it would usually reside in `\\computer-name\SMS_sitecode`
+An example would be my lab in `\\sccm-server\SMS_001` from there copy cmtrace from tools and place it inside the desktop; place Client inside C:\.
+
+When you execute ccmsetup be sure to add these switches inside powershell; `\mp:sitename /logon /SMSSITECODE=sitecode`
+Example `\mp:sccm-sever-center /logon /SMSSITECODE=001` if you have a fallback sever include `/FSP=fallbackname`
+
 ## Wsus
 If you ever had errors about wsus erroring out just use [This](https://docs.microsoft.com/en-us/answers/questions/754982/windows-server-2022-wsus-fatal-error-the-schema-ve.html) Microsoft gave wsus a type-o apparently.
 
