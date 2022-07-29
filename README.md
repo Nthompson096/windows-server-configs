@@ -22,7 +22,7 @@ If you ever had errors about wsus erroring out just use [This](https://docs.micr
 4) On line 3 change "DECLARE @scriptMinorVersion int = (11)" to "DECLARE @scriptMinorVersion int = (51)"
 the "11" is a typo
 
-5) Restore ownership, if cant the make "Everyone" owner
+5) make "Everyone" the owner
 
 6) Re-run post install config
 
