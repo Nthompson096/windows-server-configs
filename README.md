@@ -26,14 +26,12 @@ If you ever had errors about wsus erroring out just use [This](https://docs.micr
 
 1) Go to C:\Program Files\Update Services\Database
 
-2) Take ownership of VersionCheck.sql from "TrustInstall"
+2) Take ownership of VersionCheck.sql from "TrustInstall"; change it to everyone, set admin the full control
 
 3) Open file in notepad
 
 4) On line 3 change "DECLARE @scriptMinorVersion int = (11)" to "DECLARE @scriptMinorVersion int = (51)"
 the "11" is a typo
-
-5) make "Everyone" the owner
 
 6) Re-run post install config
 
