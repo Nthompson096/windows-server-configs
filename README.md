@@ -4,6 +4,10 @@
 
 To install these features change into directory after cloning this repo and run the appropriate script, for example if i wanted to run a dhcp router inside my DC server i would change into the networking directory and run `.\networking.ps1`; just be sure to uncomment the 	`#Install-WindowsFeature -config .\DHCP.xml` command. to install a DC server with the powershell command enter into the DC directory and enter `.\Newforest.ps1`; you should be able to run this script after editing it inside notepad. Be sure to edit in anything you'd want in any of these scripts in the folders inside this repo. *Also contains info on what you want to do inside these scripts*
 
+## DC Networking
+
+If you're having issues with connecting to the DC server, turn off ipv6 on the client computer and turn off the firewall, be sure that the DNS is pointing to the DC and or the SCCM servers.
+
 ## Windows SCCM
 
 Same with SCCM, clone this repository and navigate to the SCCM folder, edit the following file `.\SetupSCCM.ps1` with notepad inside powershell then go ahead and run this script
