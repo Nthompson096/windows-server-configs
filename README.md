@@ -6,7 +6,7 @@ To install these features change into directory after cloning this repo and run 
 
 ## DC Networking
 
-If you're having issues with connecting to the DC server, turn off ipv6 on the client computer and turn off the firewall, be sure that the DNS is pointing to the DC and or the SCCM servers.
+If you're having issues with connecting to the DC server, turn off ipv6 on the client computer and turn off the firewall, be sure that the DNS is pointing to the DC and or the SCCM servers. Default gateway should point to the DC or the SCCM server.
 
 ## Windows SCCM
 
