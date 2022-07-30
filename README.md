@@ -38,3 +38,7 @@ the "11" is a typo
 6) Re-run post install config
 
 7) Have a beer.
+
+## Script isn't responding wut do?
+
+Just hit `enter`
