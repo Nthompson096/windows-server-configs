@@ -48,7 +48,7 @@ For WSUS GPO's just enter the Group policy manager inside your DC, create a new 
  
  4. Configure automatic update; set to whatever you'd like.
  
- 5. Can also enable client side targeting, for computers or groups
+ 5. Can also enable client side targeting, for computers or groups; which would be in the same folder you're in Enable-Client Side targeting.
 
 ## Script isn't responding wut do?
 
