@@ -44,7 +44,8 @@ For WSUS GPO's just enter the Group policy manager inside your DC, create a new 
  
  2. Go to windows Components, Windows Update; Edit the following
  
- 3. Edit Specify Intranet Microsoft Update Location; enable and point that to your local wsus server (ie http://example-server:8530)
+ 3. Edit Specify Intranet Microsoft Update Location; enable and point that to your local wsus server </br>
+ (ie http://example-server:8530)
  
  4. Configure automatic update; set to whatever you'd like.
  
