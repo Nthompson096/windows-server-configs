@@ -40,3 +40,15 @@ the "11" is a typo
 ## Script isn't responding wut do?
 
 Just hit `enter`
+
+For WSUS GPO's just enter the Group policy manager inside your DC, create a new GPO; link that GPO to your domian and edit that GPO for WSUS. In order to do this you would have to:
+ 
+ 1. Go to computer configuration, Enter Policies; enter Admin Templetes.
+ 
+ 2. Go to windows Components, Windows Update; Edit the following
+ 
+ 3. Edit Specify Intranet Microsoft Update Location; enable and point that to your local wsus server (ie http://example-server:8530)
+ 
+ 4. Configure automatic update; set to whatever you'd like.
+ 
+ 5. Can also enable client side targeting, for computers or groups
