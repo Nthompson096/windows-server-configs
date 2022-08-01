@@ -37,9 +37,6 @@ the "11" is a typo
 
 7) Have a beer.
 
-## Script isn't responding wut do?
-
-Just hit `enter`
 
 For WSUS GPO's just enter the Group policy manager inside your DC, create a new GPO; link that GPO to your domian and edit that GPO for WSUS. In order to do this you would have to:
  
@@ -52,3 +49,8 @@ For WSUS GPO's just enter the Group policy manager inside your DC, create a new 
  4. Configure automatic update; set to whatever you'd like.
  
  5. Can also enable client side targeting, for computers or groups
+
+## Script isn't responding wut do?
+
+Just hit `enter`
+
