@@ -73,13 +73,13 @@ Just hit `enter`
    	      </hyperv>
    	      <kvm>
    	      <hidden state="on"/>
-  							 </kvm>
-   							<vmport state="off"/>
-   							<ioapic driver="kvm"/>
-   							</features>
-   							<cpu mode="host-passthrough" check="none" migratable="on">
-   							<topology sockets="1" dies="1" cores="2" threads="2"/>
-   							</cpu>
+  		  </kvm>
+   		  <vmport state="off"/>
+   		  <ioapic driver="kvm"/>
+          </features>
+          <cpu mode="host-passthrough" check="none" migratable="on">
+          <topology sockets="1" dies="1" cores="2" threads="2"/>
+          </cpu>
           <clock offset="localtime">
           <timer name="rtc" tickpolicy="catchup"/>
           <timer name="pit" tickpolicy="delay"/>
