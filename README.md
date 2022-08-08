@@ -58,7 +58,7 @@ Just hit `enter`
 ## XML Files for KVM Linux
 
 
-   							</os>
+   	</os>
    							<features>
   							 <acpi/>
    							<apic/>
