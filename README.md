@@ -58,21 +58,21 @@ Just hit `enter`
 ## XML Files for KVM Linux
 
 
-   	</os>
-   							<features>
-  							 <acpi/>
-   							<apic/>
-   							<hyperv mode="custom">
-   							<relaxed state="on"/>
-   							<vapic state="on"/>
-   							<spinlocks state="on" retries="8191"/>
-   							<vpindex state="on"/>
-   							<runtime state="on"/>
-   							<synic state="on"/>
-   							<reset state="on"/>
-   							</hyperv>
-   							<kvm>
-   							<hidden state="on"/>
+    </os>
+   	<features>
+  		<acpi/>
+   	<apic/>
+   	<hyperv mode="custom">
+   	<relaxed state="on"/>
+   	<vapic state="on"/>
+    <spinlocks state="on" retries="8191"/>
+   	<vpindex state="on"/>
+    <runtime state="on"/>
+   	<synic state="on"/>
+   	<reset state="on"/>
+   	</hyperv>
+   	<kvm>
+   	<hidden state="on"/>
   							 </kvm>
    							<vmport state="off"/>
    							<ioapic driver="kvm"/>
