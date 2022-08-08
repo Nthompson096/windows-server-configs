@@ -55,7 +55,7 @@ For WSUS GPO's just enter the Group policy manager inside your DC, create a new 
 
 Just hit `enter`
 
-## XML File for KVM Linux
+## XML File for KVM Linux, this is for the NIC Team to work properly otherwise it will be switching independent.
 
 
       </os>
